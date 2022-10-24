@@ -16,7 +16,6 @@ public class HelloTest extends DemoApplicationTests {
 
     @Autowired
     SenderService senderService;
-
     @Test
     public void test() {
         senderService.send("queue1", new User("fds", "fsd", LocalDateTime.now()));
